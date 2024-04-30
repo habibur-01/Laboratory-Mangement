@@ -1,0 +1,6 @@
+.pagination button{
+    border: 1px solid gray;
+}
+.pagination .selected{
+    background-color: #5369f8;
+}

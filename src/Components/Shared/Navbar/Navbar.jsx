@@ -8,11 +8,12 @@ import { GrTest } from "react-icons/gr";
 import { LuTestTube2 } from "react-icons/lu";
 import { GiHypodermicTest } from "react-icons/gi";
 import { useState } from "react";
+import "./styles.css"
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
-        <div className="w-64 bg-black min-h-screen text-white">
+        <div className="w-64 bg-black h-full text-white">
             <div className="py-4 border-b-2 px-6">
                 <img src={logo} alt="logo" className="w-16 object-cover" />
             </div>
@@ -23,21 +24,21 @@ const Navbar = () => {
                 </div>
                 <div className="">
                     <ul>
-                        <li><NavLink to={"/dashboard"}><span className="flex items-center gap-2 py-3"><MdOutlineDashboard size={20} />Dashboard</span></NavLink></li>
-                        <li><NavLink to={"/profile"}><span className="flex items-center gap-2 py-3"><FaUser size={20} />Profile</span></NavLink></li>
-                        <li><NavLink to={"/invoices"}><span className="flex items-center gap-2 py-3"><FaFileInvoiceDollar size={20} />Invoices</span></NavLink></li>
-                        <li><NavLink to={"/reports"}><span className="flex items-center gap-2 py-3"><TbReport size={20} />Reports</span></NavLink></li>
-                        <li><NavLink to={"/branches"}><span className="flex items-center gap-2 py-3"><FaMagnifyingGlassLocation size={20} />Branches</span></NavLink></li>
-                        <li><NavLink to={"/tests"}><span className="flex items-center gap-2 py-3"><GrTest size={20} />Tests</span></NavLink></li>
-                        <li><NavLink to={"/cultures"}><span className="flex items-center gap-2 py-3"><LuTestTube2 size={20} />Cultures</span></NavLink></li>
-                        <li><NavLink to={"/cultureOption"}><span className="flex items-center gap-2 py-3"><LuTestTube2 size={20} />Culture Options</span></NavLink></li>
-                        <li><NavLink to={"/antibiotics"}><span className="flex items-center gap-2 py-3"><GiHypodermicTest size={20} />Antibiotics</span></NavLink></li>
-                        <li><NavLink to={"/doctor"}><span className="flex items-center gap-2 py-3"><FaUserDoctor size={20} />Doctor </span></NavLink></li>
-                        <li className="relative" onClick={() => setIsOpen(!isOpen)}><NavLink ><span className="flex items-center gap-2 py-3"><FaList size={20} />Price List <span><MdKeyboardArrowDown size={18} /></span></span></NavLink>
+                        <li className="sidebar"><NavLink to={"/dashboard"}><span className="flex items-center gap-2 py-3"><MdOutlineDashboard size={20} />Dashboard</span></NavLink></li>
+                        <li className="sidebar"><NavLink to={"/profile"}><span className="flex items-center gap-2 py-3"><FaUser size={20} />Profile</span></NavLink></li>
+                        <li className="sidebar"><NavLink to={"/invoices"}><span className="flex items-center gap-2 py-3"><FaFileInvoiceDollar size={20} />Invoices</span></NavLink></li>
+                        <li className="sidebar"><NavLink to={"/reports"}><span className="flex items-center gap-2 py-3"><TbReport size={20} />Reports</span></NavLink></li>
+                        <li className="sidebar"><NavLink to={"/branches"}><span className="flex items-center gap-2 py-3"><FaMagnifyingGlassLocation size={20} />Branches</span></NavLink></li>
+                        <li className="sidebar"><NavLink to={"/tests"}><span className="flex items-center gap-2 py-3"><GrTest size={20} />Tests</span></NavLink></li>
+                        <li className="sidebar"><NavLink to={"/cultures"}><span className="flex items-center gap-2 py-3"><LuTestTube2 size={20} />Cultures</span></NavLink></li>
+                        <li className="sidebar"><NavLink to={"/cultureOption"}><span className="flex items-center gap-2 py-3"><LuTestTube2 size={20} />Culture Options</span></NavLink></li>
+                        <li className="sidebar"><NavLink to={"/antibiotics"}><span className="flex items-center gap-2 py-3"><GiHypodermicTest size={20} />Antibiotics</span></NavLink></li>
+                        <li className="sidebar"><NavLink to={"/doctor"}><span className="flex items-center gap-2 py-3"><FaUserDoctor size={20} />Doctor </span></NavLink></li>
+                        <li className="relative sidebar" onClick={() => setIsOpen(!isOpen)}><NavLink ><span className="flex items-center gap-2 py-3"><FaList size={20} />Price List <span><MdKeyboardArrowDown size={18} /></span></span></NavLink>
                             {
                                 isOpen && <><ul className="absolute left-5">
-                                    <li><NavLink to={"/testPrice"}><span className="flex items-center gap-2 py-3 text-sm"><GrTest size={18} />Test</span></NavLink></li>
-                                    <li><NavLink to={"/culturePrice"}><span className="flex items-center gap-2 py-3 text-sm"><LuTestTube2 size={18} />Culture Options</span></NavLink></li>
+                                    <li className="sidebar"><NavLink to={"/testPrice"}><span className="flex items-center gap-2 py-3 text-sm"><GrTest size={18} />Test</span></NavLink></li>
+                                    <li className="sidebar"><NavLink to={"/culturePrice"}><span className="flex items-center gap-2 py-3 text-sm"><LuTestTube2 size={18} />Culture Options</span></NavLink></li>
                                 </ul></>
                             }
                         </li>

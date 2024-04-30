@@ -1,0 +1,144 @@
+[
+    {
+        "client_code": "CL-010",
+        "invoice_number": "INV-010",
+        "customer": {
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "address": "123 Main Street, Anytown, USA"
+        },
+        "unit": "USD",
+        "total": 90.00,
+        "paid": 0.00,
+        "due": 90.00,
+        "status": "Pending"
+      },
+      {
+        "client_code": "CL-009",
+        "invoice_number": "INV-009",
+        "customer": {
+          "name": "Ivy Green",
+          "email": "ivy.green@example.com",
+          "address": "333 Maple Avenue, Anytown, USA"
+        },
+        "unit": "USD",
+        "total": 400.00,
+        "paid": 400.00,
+        "due": 0.00,
+        "status": "Paid"
+      },
+      {
+        "client_code": "CL-008",
+        "invoice_number": "INV-008",
+        "customer": {
+          "name": "Henry Jones",
+          "email": "henry.jones@example.com",
+          "address": "222 Elm Street, Anytown, USA"
+        },
+        "unit": "USD",
+        "total": 180.00,
+        "paid": 90.00,
+        "due": 90.00,
+        "status": "Partial"
+      },
+      {
+        "client_code": "CL-007",
+        "invoice_number": "INV-007",
+        "customer": {
+          "name": "Grace Wilson",
+          "email": "grace.wilson@example.com",
+          "address": "111 Pine Street, Anytown, USA"
+        },
+        "unit": "USD",
+        "total": 250.00,
+        "paid": 0.00,
+        "due": 250.00,
+        "status": "Pending"
+      },
+      {
+        "client_code": "CL-006",
+        "invoice_number": "INV-006",
+        "customer": {
+          "name": "Frank Adams",
+          "email": "frank.adams@example.com",
+          "address": "999 Walnut Street, Anytown, USA"
+        },
+        "unit": "USD",
+        "total": 120.00,
+        "paid": 120.00,
+        "due": 0.00,
+        "status": "Paid"
+      },
+      {
+        "client_code": "CL-005",
+        "invoice_number": "INV-005",
+        "customer": {
+          "name": "Emma Taylor",
+          "email": "emma.taylor@example.com",
+          "address": "777 Cedar Street, Anytown, USA"
+        },
+        "unit": "USD",
+        "total": 300.00,
+        "paid": 150.00,
+        "due": 150.00,
+        "status": "Pending"
+      },
+      {
+        "client_code": "CL-004",
+        "invoice_number": "INV-004",
+        "customer": {
+          "name": "David Lee",
+          "email": "david.lee@example.com",
+          "address": "555 Pine Street, Anytown, USA"
+        },
+        "unit": "USD",
+        "total": 75.00,
+        "paid": 75.00,
+        "due": 0.00,
+        "status": "Paid"
+      },
+      {
+        "client_code": "CL-003",
+        "invoice_number": "INV-003",
+        "customer": {
+          "name": "Carol Brown",
+          "email": "carol.brown@example.com",
+          "address": "321 Maple Avenue, Anytown, USA"
+        },
+        "unit": "USD",
+        "total": 200.00,
+        "paid": 0.00,
+        "due": 200.00,
+        "status": "Pending"
+      },
+      {
+        "client_code": "CL-002",
+        "invoice_number": "INV-002",
+        "customer": {
+          "name": "Bob Johnson",
+          "email": "bob.johnson@example.com",
+          "address": "789 Elm Street, Anytown, USA"
+        },
+        "unit": "USD",
+        "total": 150.00,
+        "paid": 150.00,
+        "due": 0.00,
+        "status": "Paid"
+      },
+      {
+        "client_code": "CL-001",
+        "invoice_number": "INV-001",
+        "customer": {
+          "name": "Alice Smith",
+          "email": "alice.smith@example.com",
+          "address": "456 Oak Street, Springfield, USA"
+        },
+        "unit": "USD",
+        "total": 100.00,
+        "paid": 50.00,
+        "due": 50.00,
+        "status": "Pending"
+      }
+                                                      
+      
+]
