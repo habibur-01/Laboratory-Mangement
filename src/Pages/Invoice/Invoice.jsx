@@ -69,7 +69,7 @@ const Invoice = () => {
                 <div className="py-10">
                     <div className="overflow-x-auto">
                         <table className="table table-zebra">
-                            <thead>
+                            <thead className="">
                                 <tr>
                                     <th>Invoice Number</th>
                                     <th>Client Code</th>
@@ -92,7 +92,10 @@ const Invoice = () => {
                                             <td>{invoice.total}</td>
                                             <td>{invoice.paid}</td>
                                             <td>{invoice.status}</td>
-                                            <td>Action</td>
+                                            <td>
+                                                <button className="btn btn-xs btn-warning mr-2">Delete</button>
+                                                <button className="btn btn-xs btn-primary">Update</button>
+                                            </td>
                                         </tr>
                                     ))
                                 }

@@ -1,11 +1,25 @@
-import { PropTypes } from "prop-types"
+import axios from "axios";
+import HeaderTitle from "../../Components/Shared/HedaerTitle/HeaderTitle";
 import { useEffect, useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
-const InvoiceTable = ({ invoice, heading }) => {
+
+const Report = () => {
+    const [reports, setReports] = useState([])
     const [itemsPerPage, setItemsPerPage] = useState(5)
     const [currentPage, setCurrentPage] = useState(1)
-    const [currentInvoices, setCurrentInvoices] = useState([])
+    const [currentReports, setCurrentReports] = useState([])
+    
+    useEffect(() => {
+        axios.get("/reports.json")
+            .then(response => {
+                console.log(response.data)
+                setReports(response.data)
+            }).catch(err => {
+                console.log(err)
+            })
+    }, [])
+    
     const handlePerPage = (e) => {
         setItemsPerPage(parseInt(e.target.value))
         setCurrentPage(1) // Reset current page to 1 when changing items per page
@@ -17,7 +31,7 @@ const InvoiceTable = ({ invoice, heading }) => {
     }
 
     const handleNextPage = () => {
-        if (currentPage < Math.ceil(invoice.length / itemsPerPage)) {
+        if (currentPage < Math.ceil(reports.length / itemsPerPage)) {
             setCurrentPage(currentPage + 1)
         }
     }
@@ -25,20 +39,22 @@ const InvoiceTable = ({ invoice, heading }) => {
     useEffect(() => {
         const indexOfLastInvoice = currentPage * itemsPerPage;
         const indexOfFirstInvoice = indexOfLastInvoice - itemsPerPage;
-        const invoicesData = invoice.slice(indexOfFirstInvoice, indexOfLastInvoice);
-        setCurrentInvoices(invoicesData)
-    }, [invoice, itemsPerPage, currentPage])
+        const invoicesData = reports.slice(indexOfFirstInvoice, indexOfLastInvoice);
+        setCurrentReports(invoicesData)
+    }, [reports, itemsPerPage, currentPage])
 
     const handleSearch = (e) => {
 
         setCurrentPage(1);
 
         // Filter invoices based on search term
-        const filteredInvoices = invoice.filter(invoice => invoice.client_code.includes(e.target.value));
-        setCurrentInvoices(filteredInvoices);
+        const filteredInvoices = reports.filter(invoice => invoice.patient_id.includes(e.target.value));
+        setCurrentReports(filteredInvoices);
     };
+   
     return (
         <div>
+            <HeaderTitle title={'Reports'}></HeaderTitle>
             <div>
                 <div>
                     <form >
@@ -53,23 +69,32 @@ const InvoiceTable = ({ invoice, heading }) => {
                         <table className="table table-zebra">
                             <thead className="">
                                 <tr>
-                                    {
-                                        heading?.map((title, index)=> <th key={index}>{title}</th>)
-                                    }
                                     
+                                    <th>Client Code</th>
+                                    <th>Client Name</th>
+                                    <th>Age</th>
+                                    <th>Gender</th>
+                                    <th>Doctor Name</th>
+                                    <th>Diagnosis</th>
+                                    <th>Prescription</th>
+                                    <th>Date</th>
+
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {
-                                    currentInvoices.map(invoice => (
+                                    currentReports.map((invoice) => (
                                         <tr key={invoice.client_code} className="py-4">
-                                            <td>{invoice.invoice_number}</td>
-                                            <td>{invoice.client_code}</td>
-                                            <td>{invoice.customer.name}</td>
-                                            <td>{invoice.customer.email}</td>
-                                            <td>{invoice.total}</td>
-                                            <td>{invoice.paid}</td>
-                                            <td>{invoice.status}</td>
+                                            
+                                            <td>{invoice.patient_id}</td>
+                                            <td>{invoice.name}</td>
+                                            <td>{invoice.age}</td>
+                                            <td>{invoice.gender}</td>
+                                            <td>{invoice.doctor}</td>
+                                            <td>{invoice.diagnosis}</td>
+                                            <td>{invoice.prescription.medication},<br/>{invoice.prescription.dosage},<br/>{invoice.prescription.frequency},<br/> {invoice.prescription.duration}</td>
+                                            <td>{invoice.date}</td>
                                             <td>
                                                 <button className="btn btn-xs btn-warning mr-2">Delete</button>
                                                 <button className="btn btn-xs btn-primary">Update</button>
@@ -91,7 +116,7 @@ const InvoiceTable = ({ invoice, heading }) => {
                             </select>
                         </div>
                         <div>
-                            <p className="text-sm opacity-85">Page {currentPage} of {Math.ceil(invoice.length / itemsPerPage)}</p>
+                            <p className="text-sm opacity-85">Page {currentPage} of {Math.ceil(reports.length / itemsPerPage)}</p>
                         </div>
                     </div>
 
@@ -100,7 +125,7 @@ const InvoiceTable = ({ invoice, heading }) => {
                             <MdKeyboardArrowLeft size={20} />
                         </div>
                         {
-                            Array.from({ length: Math.ceil(invoice.length / itemsPerPage) }, (_, i) => (
+                            Array.from({ length: Math.ceil(reports.length / itemsPerPage) }, (_, i) => (
                                 <button key={i + 1} className={`px-2 py-1 rounded-lg ${currentPage === i + 1 && 'selected'}`} onClick={() => setCurrentPage(i + 1)}>
                                     {i + 1}
                                 </button>
@@ -115,8 +140,5 @@ const InvoiceTable = ({ invoice, heading }) => {
         </div>
     );
 };
-InvoiceTable.propTypes = {
-    invoice: PropTypes.any,
-    heading: PropTypes.array
-}
-export default InvoiceTable;
+
+export default Report;

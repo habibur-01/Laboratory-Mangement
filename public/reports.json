@@ -1,0 +1,145 @@
+[
+    {
+        "patient_id": "P001",
+        "name": "John Doe",
+        "age": 45,
+        "gender": "Male",
+        "diagnosis": "Hypertension",
+        "doctor": "Dr. Smith",
+        "date": "2024-04-15",
+        "description": "Patient presented with high blood pressure readings. Prescribed medication and advised lifestyle changes.",
+        "prescription": 
+            {
+                "medication": "Lisinopril",
+                "dosage": "10mg",
+                "frequency": "Once daily",
+                "duration": "30 days"
+            }
+
+    },
+    {
+        "patient_id": "P002",
+        "name": "Alice Smith",
+        "age": 35,
+        "gender": "Female",
+        "diagnosis": "Type 2 Diabetes",
+        "doctor": "Dr. Johnson",
+        "date": "2024-04-16",
+        "description": "Patient presented with high blood sugar levels and symptoms of diabetes. Started on diabetic medication and advised dietary changes.",
+        "prescription": 
+            {
+                "medication": "Metformin",
+                "dosage": "500mg",
+                "frequency": "Twice daily",
+                "duration": "90 days"
+            }
+            
+        
+    },
+    {
+        "patient_id": "P003",
+        "name": "Michael Johnson",
+        "age": 55,
+        "gender": "Male",
+        "diagnosis": "Asthma",
+        "doctor": "Dr. Brown",
+        "date": "2024-04-17",
+        "description": "Patient presented with difficulty breathing and wheezing. Diagnosed with asthma. Prescribed inhaler and advised to avoid triggers.",
+        "prescription": 
+            {
+                "medication": "Albuterol Inhaler",
+                "dosage": "2 puffs",
+                "frequency": "As needed",
+                "duration": "N/A"
+            }
+        
+    },
+    {
+        "patient_id": "P004",
+        "name": "Emily White",
+        "age": 25,
+        "gender": "Female",
+        "diagnosis": "Urinary Tract Infection",
+        "doctor": "Dr. Garcia",
+        "date": "2024-04-18",
+        "description": "Patient complained of frequent urination and burning sensation. Diagnosed with UTI. Prescribed antibiotics.",
+        "prescription": 
+            {
+                "medication": "Ciprofloxacin",
+                "dosage": "500mg",
+                "frequency": "Twice daily",
+                "duration": "10 days"
+            }
+        
+    },
+    {
+        "patient_id": "P005",
+        "name": "David Brown",
+        "age": 40,
+        "gender": "Male",
+        "diagnosis": "Depression",
+        "doctor": "Dr. Lee",
+        "date": "2024-04-19",
+        "description": "Patient reported persistent sadness and loss of interest. Diagnosed with depression. Started on antidepressant medication and referred to therapist.",
+        "prescription": 
+            {
+                "medication": "Sertraline",
+                "dosage": "50mg",
+                "frequency": "Once daily",
+                "duration": "90 days"
+            }
+        
+    },
+    {
+        "patient_id": "P006",
+        "name": "Sophia Martinez",
+        "age": 30,
+        "gender": "Female",
+        "diagnosis": "Migraine",
+        "doctor": "Dr. Adams",
+        "date": "2024-04-20",
+        "description": "Patient complained of recurrent headaches with nausea and sensitivity to light. Diagnosed with migraines. Prescribed migraine medication and advised stress management.",
+        "prescription": 
+            {
+                "medication": "Sumatriptan",
+                "dosage": "100mg",
+                "frequency": "As needed",
+                "duration": "N/A"
+            }
+        
+    },
+    {
+        "patient_id": "P007",
+        "name": "Olivia Taylor",
+        "age": 50,
+        "gender": "Female",
+        "diagnosis": "Osteoarthritis",
+        "doctor": "Dr. Wilson",
+        "date": "2024-04-21",
+        "description": "Patient presented with joint pain and stiffness. Diagnosed with osteoarthritis. Prescribed pain medication and advised physical therapy.",
+        "prescription": 
+            {
+                "medication": "Ibuprofen",
+                "dosage": "400mg",
+                "frequency": "Every 6 hours",
+                "duration": "30 days"
+            }
+        
+    },
+    {
+        "patient_id": "P008",
+        "name": "Daniel Anderson",
+        "age": 60,
+        "gender": "Male",
+        "diagnosis": "Coronary Artery Disease",
+        "doctor": "Dr. Wilson",
+        "date": "2024-04-21",
+        "description": "Patient presented with joint pain and stiffness. Diagnosed with osteoarthritis. Prescribed pain medication and advised physical therapy.",
+        "prescription": 
+            {
+                "medication": "Ibuprofen",
+                "dosage": "400mg",
+                "frequency": "Every 6 hours",
+                "duration": "30 days"
+            }
+    }]
