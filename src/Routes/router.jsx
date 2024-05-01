@@ -6,6 +6,7 @@ import Profile from "../Pages/Profile/Profile";
 import Invoice from "../Pages/Invoice/Invoice";
 import Report from "../Pages/Report/Report";
 import Branches from "../Pages/Branches/Branches";
+import Tests from "../Pages/Tests/Tests";
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
             {
                 path:"/branches",
                 element:<Branches></Branches>
+            },
+            {
+                path: "/tests",
+                element: <Tests></Tests>
             }
 
         ]

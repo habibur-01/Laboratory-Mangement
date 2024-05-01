@@ -1,0 +1,73 @@
+[
+    {
+      "test_id": "LT001",
+      "name": "Complete Blood Count (CBC)",
+      "description": "A CBC is a blood test used to evaluate your overall health and detect a wide range of disorders, including anemia, infection, and leukemia.",
+      "sample_type": "Blood",
+      "turnaround_time": "1 day"
+    },
+    {
+      "test_id": "LT002",
+      "name": "Blood Glucose Test",
+      "description": "A blood glucose test measures the amount of sugar (glucose) in your blood. It's commonly used to diagnose diabetes and monitor blood sugar levels in people with diabetes.",
+      "sample_type": "Blood",
+      "turnaround_time": "Same day"
+    },
+    {
+      "test_id": "LT003",
+      "name": "Urinalysis",
+      "description": "Urinalysis is a test of your urine. It's used to detect and manage a wide range of disorders, such as urinary tract infections, kidney disease, and diabetes.",
+      "sample_type": "Urine",
+      "turnaround_time": "1 day"
+    },
+    {
+      "test_id": "LT004",
+      "name": "Lipid Panel",
+      "description": "A lipid panel is a blood test that measures your cholesterol levels and other fats in your blood. It's used to assess your risk of heart disease and monitor the effectiveness of cholesterol-lowering medications.",
+      "sample_type": "Blood",
+      "turnaround_time": "1 day"
+    },
+    {
+      "test_id": "LT005",
+      "name": "Thyroid Function Tests",
+      "description": "Thyroid function tests measure the levels of thyroid hormones in your blood. They're used to diagnose thyroid disorders, such as hypothyroidism and hyperthyroidism.",
+      "sample_type": "Blood",
+      "turnaround_time": "1-2 days"
+    },
+    {
+      "test_id": "LT006",
+      "name": "Liver Function Tests",
+      "description": "Liver function tests measure the levels of enzymes and proteins in your blood that indicate how well your liver is functioning. They're used to diagnose liver diseases and monitor liver health.",
+      "sample_type": "Blood",
+      "turnaround_time": "1 day"
+    },
+    {
+      "test_id": "LT007",
+      "name": "Chest X-ray",
+      "description": "A chest X-ray is a noninvasive imaging test that uses small amounts of radiation to produce pictures of the structures inside your chest, including your heart, lungs, and blood vessels.",
+      "sample_type": "N/A",
+      "turnaround_time": "Same day"
+    },
+    {
+      "test_id": "LT008",
+      "name": "Electrocardiogram (ECG or EKG)",
+      "description": "An electrocardiogram is a noninvasive test that records the electrical activity of your heart over a period of time. It's used to diagnose heart rhythm problems and evaluate the overall health of your heart.",
+      "sample_type": "N/A",
+      "turnaround_time": "Same day"
+    },
+    {
+      "test_id": "LT009",
+      "name": "Stool Culture",
+      "description": "A stool culture is a test used to detect and identify bacteria, viruses, and parasites in your stool. It's used to diagnose infections of the gastrointestinal tract, such as bacterial gastroenteritis.",
+      "sample_type": "Stool",
+      "turnaround_time": "2-3 days"
+    },
+    {
+      "test_id": "LT010",
+      "name": "Pap Smear",
+      "description": "A Pap smear, also called a Pap test, is a screening test for cervical cancer. It involves collecting cells from the cervix and examining them under a microscope for abnormalities.",
+      "sample_type": "Cervical cells",
+      "turnaround_time": "1 week"
+    }
+  ]
+  
