@@ -1,0 +1,122 @@
+[
+    {
+        "branch_id": "LB001",
+        "name": "ABC Diagnostic Center",
+        "location": "123 Main Street, City A",
+        "phone": "+1234567890",
+        "email": "info@abcdiagnosticcenter.com",
+        "services": [
+            "MRI",
+            "CT Scan",
+            "X-Ray",
+            "Ultrasound"
+        ]
+    },
+    {
+        "branch_id": "LB002",
+        "name": "XYZ Medical Labs",
+        "location": "456 Elm Street, City B",
+        "phone": "+9876543210",
+        "email": "info@xyzmedicallabs.com",
+        "services": [
+            "Blood Tests",
+            "Urine Analysis",
+            "Genetic Testing"
+        ]
+    },
+    {
+        "branch_id": "LB003",
+        "name": "City Hospital Laboratory",
+        "location": "789 Oak Street, City C",
+        "phone": "+1122334455",
+        "email": "lab@cityhospital.com",
+        "services": [
+            "Hematology",
+            "Microbiology",
+            "Chemistry"
+        ]
+    },
+    {
+        "branch_id": "LB004",
+        "name": "Sunrise Diagnostics",
+        "location": "321 Pine Street, City D",
+        "phone": "+9988776655",
+        "email": "info@sunrisediagnostics.com",
+        "services": [
+            "Cardiology Tests",
+            "Endocrinology",
+            "Neurology"
+        ]
+    },
+    {
+        "branch_id": "LB005",
+        "name": "HealthCare Laboratory",
+        "location": "567 Maple Street, City E",
+        "phone": "+1122334455",
+        "email": "info@healthcarelab.com",
+        "services": [
+            "Pathology",
+            "Immunology",
+            "Toxicology"
+        ]
+    },
+    {
+        "branch_id": "LB006",
+        "name": "MediLab Solutions",
+        "location": "789 Oak Street, City F",
+        "phone": "+3344556677",
+        "email": "info@medilabsolutions.com",
+        "services": [
+            "Allergy Testing",
+            "Rheumatology",
+            "Oncology"
+        ]
+    },
+    {
+        "branch_id": "LB007",
+        "name": "City Diagnostic Center",
+        "location": "987 Cedar Street, City G",
+        "phone": "+9988776655",
+        "email": "info@citydiagnosticcenter.com",
+        "services": [
+            "Radiology",
+            "Endoscopy",
+            "Cardiac Tests"
+        ]
+    },
+    {
+        "branch_id": "LB008",
+        "name": "Wellness Laboratory",
+        "location": "654 Birch Street, City H",
+        "phone": "+1122334455",
+        "email": "info@wellnesslab.com",
+        "services": [
+            "Nutritional Analysis",
+            "Fitness Testing"
+        ]
+    },
+    {
+        "branch_id": "LB009",
+        "name": "Global Diagnostics",
+        "location": "210 Cedar Street, City I",
+        "phone": "+3344556677",
+        "email": "info@globaldiagnostics.com",
+        "services": [
+            "Pediatric Testing",
+            "Geriatric Testing",
+            "Prenatal Testing"
+        ]
+    },
+    {
+        "branch_id": "LB010",
+        "name": "Quality Medical Labs",
+        "location": "876 Pine Street, City J",
+        "phone": "+1122334455",
+        "email": "info@qualitymedicallabs.com",
+        "services": [
+            "Histology",
+            "Cytology",
+            "Molecular Diagnostics"
+        ]
+    }
+]
