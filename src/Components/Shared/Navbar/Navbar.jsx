@@ -24,7 +24,7 @@ const Navbar = () => {
                 </div>
                 <div className="">
                     <ul>
-                        <li className="sidebar"><NavLink to={"/dashboard"}><span className="flex items-center gap-2 py-3"><MdOutlineDashboard size={20} />Dashboard</span></NavLink></li>
+                        <li className="sidebar"><NavLink to={"/"}><span className="flex items-center gap-2 py-3"><MdOutlineDashboard size={20} />Dashboard</span></NavLink></li>
                         <li className="sidebar"><NavLink to={"/profile"}><span className="flex items-center gap-2 py-3"><FaUser size={20} />Profile</span></NavLink></li>
                         <li className="sidebar"><NavLink to={"/invoices"}><span className="flex items-center gap-2 py-3"><FaFileInvoiceDollar size={20} />Invoices</span></NavLink></li>
                         <li className="sidebar"><NavLink to={"/reports"}><span className="flex items-center gap-2 py-3"><TbReport size={20} />Reports</span></NavLink></li>
@@ -34,7 +34,7 @@ const Navbar = () => {
                         <li className="sidebar"><NavLink to={"/cultureOption"}><span className="flex items-center gap-2 py-3"><LuTestTube2 size={20} />Culture Options</span></NavLink></li>
                         <li className="sidebar"><NavLink to={"/antibiotics"}><span className="flex items-center gap-2 py-3"><GiHypodermicTest size={20} />Antibiotics</span></NavLink></li>
                         <li className="sidebar"><NavLink to={"/doctor"}><span className="flex items-center gap-2 py-3"><FaUserDoctor size={20} />Doctor </span></NavLink></li>
-                        <li className="relative sidebar" onClick={() => setIsOpen(!isOpen)}><NavLink ><span className="flex items-center gap-2 py-3"><FaList size={20} />Price List <span><MdKeyboardArrowDown size={18} /></span></span></NavLink>
+                        <li className="relative " onClick={() => setIsOpen(!isOpen)}><NavLink ><span className="flex items-center gap-2 py-3"><FaList size={20} />Price List <span><MdKeyboardArrowDown size={18} /></span></span></NavLink>
                             {
                                 isOpen && <><ul className="absolute left-5">
                                     <li className="sidebar"><NavLink to={"/testPrice"}><span className="flex items-center gap-2 py-3 text-sm"><GrTest size={18} />Test</span></NavLink></li>

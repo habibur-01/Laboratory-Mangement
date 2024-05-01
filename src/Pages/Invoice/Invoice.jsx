@@ -92,8 +92,8 @@ const Invoice = () => {
                                             <td>{invoice.total}</td>
                                             <td>{invoice.paid}</td>
                                             <td>{invoice.status}</td>
-                                            <td>
-                                                <button className="btn btn-xs btn-warning mr-2">Delete</button>
+                                            <td className="flex gap-2">
+                                                <button className="btn btn-xs btn-warning ">Delete</button>
                                                 <button className="btn btn-xs btn-primary">Update</button>
                                             </td>
                                         </tr>
